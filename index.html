@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Newspaper</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Entertainment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-article">
+            <article>
+                <h2>Main Headline of the Day</h2>
+                <p class="date">December 3, 2024</p>
+                <img src="https://via.placeholder.com/800x400" alt="Main news image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+            </article>
+        </section>
+
+        <section class="side-articles">
+            <article>
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+            <article>
+                <h3>Article 2</h3>
+                <p>Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+            </article>
+            <article>
+                <h3>Article 3</h3>
+                <p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+            </article>
+        </section>
+
+        <!-- Interactive Section: Breaking News Button -->
+        <section class="breaking-news">
+            <button id="show-news">Show Breaking News</button>
+            <div id="news-popup" class="popup">
+                <p><strong>BREAKING NEWS:</strong> Major updates happening now!</p>
+                <button id="close-news">Close</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Newspaper. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
