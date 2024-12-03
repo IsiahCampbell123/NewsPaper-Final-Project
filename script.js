@@ -2,11 +2,11 @@
 function showSection(section) {
     // Hide all sections
     const sections = document.querySelectorAll('.section');
-    sections.forEach(s => s.style.display = 'none');
+    sections.forEach(s => s.classList.remove('active')); // Remove 'active' class from all sections
 
     // Show the selected section
     const selectedSection = document.getElementById(section);
     if (selectedSection) {
-        selectedSection.style.display = 'block';
+        selectedSection.classList.add('active'); // Add 'active' class to the clicked section
     }
 }
