@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newspaper App</title>
+    <title>My Newspaper</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,47 +13,43 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Entertainment</a></li>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('world')">World</a></li>
+                <li><a href="#" onclick="showSection('politics')">Politics</a></li>
+                <li><a href="#" onclick="showSection('sports')">Sports</a></li>
+                <li><a href="#" onclick="showSection('entertainment')">Entertainment</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="main-article">
-            <article>
-                <h2>Main Headline of the Day</h2>
-                <p class="date">December 3, 2024</p>
-                <img src="https://via.placeholder.com/800x400" alt="Main news image">
-                <p>Breaking news: Authorities are investigating a major incident that took place early this morning in downtown. Local officials have confirmed that several people have been injured, but the exact number is still being verified. Emergency teams are on the scene, and authorities are urging the public to stay away from the area.</p>
-            </article>
+        <section id="home" class="section">
+            <h2>Welcome to the Newspaper</h2>
+            <p>This is your daily news source. Click on any category to explore more.</p>
         </section>
 
-        <section class="side-articles">
-            <article>
-                <h3>Global Leaders Meet for Climate Summit</h3>
-                <p>World leaders gathered today for the much-anticipated climate summit, aiming to discuss the urgent need for global action on climate change. Discussions are expected to cover new policies to reduce carbon emissions and the future of renewable energy technologies.</p>
-            </article>
-            <article>
-                <h3>Sports Team Wins National Championship</h3>
-                <p>In an exciting finish to the season, the city's top sports team clinched the national championship. Fans erupted in celebration as the team scored a last-minute goal, securing the victory and bringing home the trophy for the first time in over two decades.</p>
-            </article>
-            <article>
-                <h3>Hollywood Star Announces New Movie</h3>
-                <p>Famous actress Jane Doe has just announced her next big project, a thrilling action movie set to be released next summer. The actress promises a high-energy performance that will keep audiences on the edge of their seats. Filming for the movie is expected to begin next month.</p>
-            </article>
+        <section id="world" class="section" style="display:none;">
+            <h2>World News</h2>
+            <img src="https://via.placeholder.com/800x400" alt="World News">
+            <p>Breaking news from around the world: Authorities are investigating major incidents, and leaders from various countries are meeting to discuss international policies.</p>
         </section>
 
-        <!-- Interactive Section: Breaking News Button -->
-        <section class="breaking-news">
-            <button id="show-news">Show Breaking News</button>
-            <div id="news-popup" class="popup">
-                <p><strong>BREAKING NEWS:</strong> Major updates happening now!</p>
-                <button id="close-news">Close</button>
-            </div>
+        <section id="politics" class="section" style="display:none;">
+            <h2>Politics</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Politics News">
+            <p>The latest political developments: World leaders are debating new policies, and elections are taking place across multiple countries. Stay tuned for updates!</p>
+        </section>
+
+        <section id="sports" class="section" style="display:none;">
+            <h2>Sports</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Sports News">
+            <p>Exciting moments from the sports world: Our local team wins the national championship in a thrilling final. More updates from your favorite teams here!</p>
+        </section>
+
+        <section id="entertainment" class="section" style="display:none;">
+            <h2>Entertainment</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Entertainment News">
+            <p>Celebrity news and entertainment updates: Hollywood stars announce new movies, and the latest music releases are taking the charts by storm!</p>
         </section>
     </main>
 
@@ -64,3 +60,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
