@@ -1,8 +1,12 @@
-// JavaScript to manage the popup behavior
-document.getElementById("show-news").addEventListener("click", function() {
-    document.getElementById("news-popup").style.display = "block"; // Show the popup
-});
+// JavaScript to handle section switching
+function showSection(section) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(s => s.style.display = 'none');
 
-document.getElementById("close-news").addEventListener("click", function() {
-    document.getElementById("news-popup").style.display = "none"; // Hide the popup
-});
+    // Show the selected section
+    const selectedSection = document.getElementById(section);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+}
